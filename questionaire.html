@@ -73,31 +73,7 @@
                 <h2 class="fs-title">Demographics</h2>
                 <h3 class="fs-subtitle">We are seeking to understand who you are</h3>
 
-
-                <!-- SLIDER EXAMPLE 1 -->
-
-                <!-- <div class="slider" style="position:relative; margin:auto; width:95;">
-                <span style="position:absolute; color:blue; font-size: 12px; min-width:100px;">
-                    <span id="myValue"></span>
-                </span>
-                <input type="range" id="myRange" max="100" min="0" style="width:90%;">
-            </div> -->
-
-                <!-- SLIDER EXAMPLE 2 -->
-                <!-- <div>
-                <span id="rangeValue">0</span>
-                <Input class="range" type="range" name="" value="0" min="0" max="100" style="width: 90%;"
-                    onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
-            </div> -->
-
-
-
-
-
-
-
-
-                <label>Birthday : <span></span></label>
+                <label for="Birthday">Birthday : <span></span></label>
                 <select id="month" name="mm" onchange="change_month(this)"></select>
                 <select id="day" name="dd">
                 </select>
@@ -108,14 +84,14 @@
                 <br>
                 <br>
                 <label for="sex">Sex (DNA):
-                    <select name="Sex">
+                    <select id="sex" name="Sex">
                         <option value="none" selected>Select</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
                     </select></label>
                 <label for="gender">Gender:
-                    <select name="Gender">
+                    <select id="gender" name="Gender">
                         <option value="none" selected>I identify as</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -124,62 +100,62 @@
                 <br>
                 <br>
                 <!-- Location -->
-                <Label for="country">Country:<select class="crs-country" data-region-id="ABC"></select></Label>
-                <Label for="region">Region:<select id="ABC"></select></Label>
+                <Label for="country">Country:</Label><select class="crs-country" data-region-id="ABC" name="country"
+                    id="country"></select>
+                <Label for="region">Region:</Label><select name="region" id="ABC region"></select>
                 <br>
                 <br>
-                <label for="ethnicity">Ethnicity:
-                    <!-- <legend>Ethnicity</legend> -->
-                    <select class="form-control dropdown" id="ethnicity" name="ethnicity">
-                        <option value="none" selected="selected" disabled="disabled">Select</option>
-                        <optgroup label="White">
-                            <option value="White English">English</option>
-                            <option value="White Welsh">Welsh</option>
-                            <option value="White Scottish">Scottish</option>
-                            <option value="White Northern Irish">Northern Irish</option>
-                            <option value="White Irish">Irish</option>
-                            <option value="White Gypsy or Irish Traveller">Gypsy or Irish Traveller</option>
-                            <option value="White Other">Any other White background</option>
-                        </optgroup>
-                        <optgroup label="Mixed or Multiple ethnic groups">
-                            <option value="Mixed White and Black Caribbean">White and Black Caribbean</option>
-                            <option value="Mixed White and Black African">White and Black African</option>
-                            <option value="Mixed White Other">Any other Mixed or Multiple background</option>
-                        </optgroup>
-                        <optgroup label="Asian">
-                            <option value="Asian Indian">Indian</option>
-                            <option value="Asian Pakistani">Pakistani</option>
-                            <option value="Asian Bangladeshi">Bangladeshi</option>
-                            <option value="Asian Chinese">Chinese</option>
-                            <option value="Asian Other">Any other Asian background</option>
-                        </optgroup>
-                        <optgroup label="Black">
-                            <option value="Black African">African</option>
-                            <option value="Black African American">African American</option>
-                            <option value="Black Caribbean">Caribbean</option>
-                            <option value="Black Other">Any other Black background</option>
-                        </optgroup>
-                        <optgroup label="Other ethnic groups">
-                            <option value="Arab">Arab</option>
-                            <option value="Hispanic">Hispanic</option>
-                            <option value="Latino">Latino</option>
-                            <option value="Native American">Native American</option>
-                            <option value="Pacific Islander">Pacific Islander</option>
-                            <option value="Other">Any other ethnic group</option>
-                        </optgroup>
-                    </select>
-                </label>
+                <label for="ethnicity">Ethnicity:</Label>
+                <!-- <legend>Ethnicity</legend> -->
+                <select class="form-control dropdown" id="ethnicity" name="ethnicity">
+                    <option value="none" selected="selected" disabled="disabled">Select</option>
+                    <optgroup label="White">
+                        <option value="White English">English</option>
+                        <option value="White Welsh">Welsh</option>
+                        <option value="White Scottish">Scottish</option>
+                        <option value="White Northern Irish">Northern Irish</option>
+                        <option value="White Irish">Irish</option>
+                        <option value="White Gypsy or Irish Traveller">Gypsy or Irish Traveller</option>
+                        <option value="White Other">Any other White background</option>
+                    </optgroup>
+                    <optgroup label="Mixed or Multiple ethnic groups">
+                        <option value="Mixed White and Black Caribbean">White and Black Caribbean</option>
+                        <option value="Mixed White and Black African">White and Black African</option>
+                        <option value="Mixed White Other">Any other Mixed or Multiple background</option>
+                    </optgroup>
+                    <optgroup label="Asian">
+                        <option value="Asian Indian">Indian</option>
+                        <option value="Asian Pakistani">Pakistani</option>
+                        <option value="Asian Bangladeshi">Bangladeshi</option>
+                        <option value="Asian Chinese">Chinese</option>
+                        <option value="Asian Other">Any other Asian background</option>
+                    </optgroup>
+                    <optgroup label="Black">
+                        <option value="Black African">African</option>
+                        <option value="Black African American">African American</option>
+                        <option value="Black Caribbean">Caribbean</option>
+                        <option value="Black Other">Any other Black background</option>
+                    </optgroup>
+                    <optgroup label="Other ethnic groups">
+                        <option value="Arab">Arab</option>
+                        <option value="Hispanic">Hispanic</option>
+                        <option value="Latino">Latino</option>
+                        <option value="Native American">Native American</option>
+                        <option value="Pacific Islander">Pacific Islander</option>
+                        <option value="Other">Any other ethnic group</option>
+                    </optgroup>
+                </select>
                 <br>
                 <br>
 
 
 
                 <!-- Heritage -->
-                <label for="heritage">Do you identify with any particular heritages or cultures?
-                    <br>
-                    <br>
-                    <textarea class="form-control" name="CAT_Custom_1" id="CAT_Custom_1" rows="4"
-                        onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea></label>
+                <label for="CAT_Custom_1">Do you identify with any particular heritages or cultures?</label>
+                <br>
+                <br>
+                <textarea class="form-control" name="CAT_Custom_1" id="CAT_Custom_1" rows="4"
+                    onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
 
 
                 <!-- Button -->
@@ -190,30 +166,41 @@
                 <h2 class="fs-title">Values</h2>
 
                 <!-- Question -->
-                <h3 class="fs-subtitle">Do you have your own unique set of value?</h3>
-                <label for="value1"><textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
-                        onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea></label>
+                <label for="CAT_Custom_2">
+                    <h3 class="fs-subtitle">Do you have your own unique set of value?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                    onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Pleast list any value you find important? (Ex: Freedom, Justice, Compassion,
+                <label for="CAT_Custom_3>
+                <h3 class=" fs-subtitle">Pleast list any value you find important? (Ex: Freedom, Justice, Compassion,
                     etc.)
-                </h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                    </h3></label>
+                <textarea class="form-control" name="CAT_Custom_3" id="CAT_Custom_3" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">How do these values compare to those of the world?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_4">
+                    <h3 class="fs-subtitle">How do these values compare to those of the world?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_4" id="CAT_Custom_4" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">How do these values contrast to those of the world?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_5">
+                    <h3 class="fs-subtitle">How do these values contrast to those of the world?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_5" id="CAT_Custom_5" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">In what ways has your life experiences shaped your values?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_6">
+                    <h3 class="fs-subtitle">In what ways has your life experiences shaped your values?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">How have these values evolved over time?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_7">
+                    <h3 class="fs-subtitle">How have these values evolved over time?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_7" id="CAT_Custom_7" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
 
 
@@ -222,96 +209,130 @@
                 <input type="button" name="next" class="next action-button" value="Next" />
             </fieldset>
             <fieldset>
+
                 <h2 class="fs-title">Meaning</h2>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Where do you find meaning in your life?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_8">
+                    <h3 class="fs-subtitle">Where do you find meaning in your life?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_8" id="CAT_Custom_8" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">How do you define meaningful?
-                </h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_9">
+                    <h3 class="fs-subtitle">How do you define meaningful?
+                    </h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_9" id="CAT_Custom_9" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">How do you define meaningful connection?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_10">
+                    <h3 class="fs-subtitle">How do you define meaningful connection?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_10" id="CAT_Custom_10" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">What does it mean to live a meaningful life?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_11">
+                    <h3 class="fs-subtitle">What does it mean to live a meaningful life?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_11" id="CAT_Custom_11" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">How did you come to these observations?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_12">
+                    <h3 class="fs-subtitle">How did you come to these observations?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_12" id="CAT_Custom_12" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Do you feel you live a life of meaning? Why or why not?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_13">
+                    <h3 class="fs-subtitle">Do you feel you live a life of meaning? Why or why not?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_13" id="CAT_Custom_13" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Where would you advise others to find meaning in their lives?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_14">
+                    <h3 class="fs-subtitle">Where would you advise others to find meaning in their lives?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_14" id="CAT_Custom_14" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!--  Button -->
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
                 <input type="button" name="next" class="next action-button" value="Next" />
             </fieldset>
+
             <fieldset>
+
                 <h2 class="fs-title">Well Being</h2>
                 <!-- Question -->
-                <h3 class="fs-subtitle">How would you rate your state of well being?</h3>
+                <label for="range">
+                    <h3 class="fs-subtitle">How would you rate your state of well being?</h3>
+                </label>
                 <div>
 
-                    <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 95%;"
-                        onChange="range1Slide(this.value)" onmousemove="range1Slide(this.value)"></Input>
+                    <Input class="range" id="range" type="range" name="range" value="20" min="0" max="100"
+                        style="width: 95%;" onChange="range1Slide(this.value)"
+                        onmousemove="range1Slide(this.value)"></Input>
                     <br>
                     <span id="range1Value">20</span>
 
                 </div>
                 <br>
                 <!-- Question -->
-                <h3 class="fs-subtitle">What does well being mean to you?
-                </h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_15">
+                    <h3 class="fs-subtitle">What does well being mean to you?
+                    </h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_15" id="CAT_Custom_15" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
 
                 <!-- Question -->
-                <h3 class="fs-subtitle">How would you rate the well being of your local community?</h3>
+                <label for="range2">
+                    <h3 class="fs-subtitle">How would you rate the well being of your local community?</h3>
+                </label>
                 <div>
 
-                    <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 95%;"
-                        onChange="range2Slide(this.value)" onmousemove="range2Slide(this.value)"></Input>
+                    <Input class="range" type="range" name="range2" id="range2" value="20" min="0" max="100"
+                        style="width: 95%;" onChange="range2Slide(this.value)"
+                        onmousemove="range2Slide(this.value)"></Input>
                     <br>
                     <span id="range2Value">20</span>
 
                 </div>
                 <br>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Of your region? (Ex: City, State, Province)</h3>
+                <label for="range3">
+                    <h3 class="fs-subtitle">Of your region? (Ex: City, State, Province)</h3>
+                </label>
                 <div>
 
-                    <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 90%;"
-                        onChange="range3Slide(this.value)" onmousemove="range3Slide(this.value)"></Input>
+                    <Input class="range" type="range" name="range3" id="range3" value="20" min="0" max="100"
+                        style="width: 90%;" onChange="range3Slide(this.value)"
+                        onmousemove="range3Slide(this.value)"></Input>
                     <br>
                     <span id="range3Value">20</span>
                 </div>
                 <br>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Of your country?</h3>
+                <label for="range4">
+                    <h3 class="fs-subtitle">Of your country?</h3>
+                </label>
                 <div>
 
-                    <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 90%;"
-                        onChange="range4Slide(this.value)" onmousemove="range4Slide(this.value)"></Input>
+                    <Input class="range" type="range" name="range4" id="range4" value="20" min="0" max="100"
+                        style="width: 90%;" onChange="range4Slide(this.value)"
+                        onmousemove="range4Slide(this.value)"></Input>
                     <br>
                     <span id="range4Value">20</span>
                 </div>
                 <br>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Of all of earth?</h3>
+                <label for="range5">
+                    <h3 class="fs-subtitle">Of all of earth?</h3>
+                </label>
                 <div>
 
-                    <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 90%;"
-                        onChange="range5Slide(this.value)" onmousemove="range5Slide(this.value)"></Input>
+                    <Input class="range" type="range" name="range5" id="range5" value="20" min="0" max="100"
+                        style="width: 90%;" onChange="range5Slide(this.value)"
+                        onmousemove="range5Slide(this.value)"></Input>
                     <br>
                     <span id="range5Value">20</span>
                 </div>
@@ -321,14 +342,19 @@
                 <input type="button" name="next" class="next action-button" value="Next" />
             </fieldset>
             <fieldset>
+
                 <h2 class="fs-title">Well Being - Continued</h2>
                 <!-- Question -->
-                <h3 class="fs-subtitle">How would you describe your social status?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_16">
+                    <h3 class="fs-subtitle">How would you describe your social status?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_16" id="CAT_Custom_16" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Is social status important? Why or why not?</h3>
-                <textarea class="form-control" name="CAT_Custom_2" id="CAT_Custom_2" rows="4"
+                <label for="CAT_Custom_17">
+                    <h3 class="fs-subtitle">Is social status important? Why or why not?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_17" id="CAT_Custom_17" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <br>
                 <br>
@@ -336,8 +362,8 @@
                 <!-- Question -->
 
                 <div class="HHI">
-                    <label class="Q" for="HHI">What is your present household income?</label>
-                    <select name="HHI">
+                    <label class="Q" for="HHI1">What is your present household income?</label>
+                    <select id="HHI1" name="HHI1">
                         <option value="none" selected>Select</option>
                         <option value="1">0 - $12,000</option>
                         <option value="2">$12,001 - $26,000</option>
@@ -352,8 +378,8 @@
                 <br>
                 <!-- Question -->
                 <div class="HHI">
-                    <label class="Q" for="HHI">What household income were you born into?</label>
-                    <select name="HHI">
+                    <label class="Q" for="HHI2">What household income were you born into?</label>
+                    <select id="HHI2" name="HHI2">
                         <option value="none" selected>Select</option>
                         <option value="1">0 - $12,000</option>
                         <option value="2">$12,001 - $26,000</option>
@@ -368,8 +394,8 @@
                 <br>
                 <!-- Question -->
                 <div class="HHI">
-                    <label class="Q" for="HHI">What was your household income at it's lowest?</label>
-                    <select name="HHI">
+                    <label class="Q" for="HHI3">What was your household income at it's lowest?</label>
+                    <select id="HHI3" name="HHI3">
                         <option value="none" selected>Select</option>
                         <option value="1">0 - $12,000</option>
                         <option value="2">$12,001 - $26,000</option>
@@ -384,8 +410,8 @@
                 <br>
                 <!-- Question -->
                 <div class="HHI">
-                    <label class="Q" for="HHI">What was your household income at it's highest?</label>
-                    <select name="HHI">
+                    <label class="Q" for="HHI4">What was your household income at it's highest?</label>
+                    <select id="HHI4" name="HHI4">
                         <option value="none" selected>Select</option>
                         <option value="1">0 - $12,000</option>
                         <option value="2">$12,001 - $26,000</option>
@@ -401,17 +427,19 @@
 
                 <!-- Question -->
                 <div class="HHI">
-                    <label class="Q" for="prompt">You are tasked with advising world governments as to what income level
+                    <label class="Q" for="recommend">You are tasked with advising world governments as to what income
+                        level
                         is
                         necessary
                         to ensure a positive degree of well being. What income do you recommend?</label>
-                    <input type="text" id="text-box" name="recommend">
+                    <input type="text" id="text-box recommend" name="recommend">
                 </div>
                 <br>
                 <br>
-                <label for="HHI">Why do you think this is a sufficient amount?</label>
+                <!-- Question -->
+                <label for="CAT_Custom_18">Why do you think this is a sufficient amount?</label>
                 <br><br>
-                <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
+                <textarea class="form-control" name="CAT_Custom_18" id="CAT_Custom_18" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
 
                 <!--  Button -->
@@ -421,28 +449,40 @@
             <fieldset>
                 <h2 class="fs-title">Knowledge</h2>
                 <!-- Question -->
-                <h3 class="fs-subtitle">What is knowledge? Please provide your own definition.</h3>
-                <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
+                <label for="CAT_Custom_19">
+                    <h3 class="fs-subtitle">What is knowledge? Please provide your own definition.</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_19" id="CAT_Custom_19" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Is it valuable? Why or why not?</h3>
-                <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
+                <label for="CAT_Custom_20">
+                    <h3 class="fs-subtitle">Is it valuable? Why or why not?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_20" id="CAT_Custom_20" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">What is conciousness? Please provide your own definition.</h3>
-                <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
+                <label for="CAT_Custom_21">
+                    <h3 class="fs-subtitle">What is conciousness? Please provide your own definition.</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_21" id="CAT_Custom_21" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Is it valuable? Why or why not?</h3>
-                <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
+                <label for="CAT_Custom_22">
+                    <h3 class="fs-subtitle">Is it valuable? Why or why not?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_22" id="CAT_Custom_22" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">What is reason? Please provide your own definition.</h3>
-                <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
+                <label for="CAT_Custom_23">
+                    <h3 class="fs-subtitle">What is reason? Please provide your own definition.</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_23" id="CAT_Custom_23" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <!-- Question -->
-                <h3 class="fs-subtitle">Is it valuable? Why or why not?</h3>
-                <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4"
+                <label for="CAT_Custom_24">
+                    <h3 class="fs-subtitle">Is it valuable? Why or why not?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_24" id="CAT_Custom_24" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
 
                 <!-- Button -->
@@ -459,10 +499,11 @@
                         <label for="left" class="temp-left">PESSIMISTIC</label>
                     </div>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width:175px;">
+                        <label for="range6">
+                            <input type="range" min="0" max="100" value="30" name="range6" id="range6" class="range6"
+                                step="10" list="volsettings1" style="width:175px;"></label>
 
-                        <datalist id="volsettings">
+                        <datalist id="volsettings1">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -488,9 +529,10 @@
                         <label for="left" class="temp-left">INTROVERT</label>
                     </div>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px;">
-                        <datalist id="volsettings">
+                        <label for="range7">
+                            <input type="range" min="0" max="100" value="30" name="range7" id="range7" class="range6"
+                                step="10" list="volsettings2" style="width: 175px;"></label>
+                        <datalist id="volsettings2">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -516,9 +558,10 @@
                         <label for="left" class="temp-left">PASSIVE </label>
                     </div>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px;">
-                        <datalist id="volsettings">
+                        <label for="range8">
+                            <input type="range" min="0" max="100" value="30" name="range8" class="range6" step="10"
+                                id="range8" list="volsettings3" style="width: 175px;"></label>
+                        <datalist id="volsettings3">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -544,9 +587,10 @@
                         <label for="left" class="temp-left">SERIOUS</label>
                     </div>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align-items: center;">
-                        <datalist id="volsettings">
+                        <label for="range9">
+                            <input type="range" min="0" max="100" value="30" name="range9" id="range9" class="range6"
+                                step="10" list="volsettings4" style="width: 175px; align-items: center;"></label>
+                        <datalist id="volsettings4">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -572,9 +616,10 @@
                         <label for="left" class="temp-left">RIGID</label>
                     </div>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align-items: center;">
-                        <datalist id="volsettings">
+                        <label for="range10">
+                            <input type="range" min="0" max="100" value="30" class="range6" id="range10" name="range10"
+                                step="10" list="volsettings5" style="width: 175px; align-items: center;"></label>
+                        <datalist id="volsettings5">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -600,9 +645,10 @@
                         <label for="left" class="temp-left">CAREFREE</label>
                     </div>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align-items: center;">
-                        <datalist id="volsettings">
+                        <label for="range11">
+                            <input type="range" min="0" max="100" id="range11" name="range11" value="30" class="range6"
+                                step="10" list="volsettings6" style="width: 175px; align-items: center;"></label>
+                        <datalist id="volsettings6">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -628,9 +674,10 @@
                         <label for="left" class="temp-left">CREATIVE</label>
                     </div>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align-items: center;">
-                        <datalist id="volsettings">
+                        <label for="range12">
+                            <input type="range" name="range12" min="0" max="100" value="30" class="range6" id="range12"
+                                step="10" list="volsettings7" style="width: 175px; align-items: center;"></label>
+                        <datalist id="volsettings7">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -656,9 +703,10 @@
                         <label for="left" class="temp-left">PLANNED</label>
                     </div>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align-items: center;">
-                        <datalist id="volsettings">
+                        <label for="range13">
+                            <input type="range" min="0" max="100" value="30" name="range13" id="range13" class="range6"
+                                step="10" list="volsettings8" style="width: 175px; align-items: center;"></label>
+                        <datalist id="volsettings8">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -682,9 +730,10 @@
                 <div class="rangeq">
                     <label class="temp-left">RATIONAL</label>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align-items: center;">
-                        <datalist id="volsettings">
+                        <label for="range14">
+                            <input type="range" min="0" max="100" value="30" name="range14" id="range14" class="range6"
+                                step="10" list="volsettings9" style="width: 175px; align-items: center;"></label>
+                        <datalist id="volsettings9">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -706,9 +755,10 @@
                 <div class="rangeq">
                     <label for="left" class="temp-left">EXPRESSIVE</label>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align-items: center;">
-                        <datalist id="volsettings">
+                        <label for="range15">
+                            <input type="range" min="0" max="100" value="30" range="range15" id="range15" class="range6"
+                                step="10" list="volsettings10" style="width: 175px; align-items: center;"></label>
+                        <datalist id="volsettings10">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -730,9 +780,10 @@
                 <div class="rangeq">
                     <label for="left" class="temp-left">RIGID</label>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align: center;">
-                        <datalist id="volsettings">
+                        <label for="range17">
+                            <input type="range" min="0" max="100" value="30" class="range6" id="range17" name="range17"
+                                step="10" list="volsettings11" style="width: 175px; align: center;"></label>
+                        <datalist id="volsettings11">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -754,9 +805,10 @@
                 <div class="rangeq">
                     <label for="left" class="temp-left">DIPLOMATIC</label>
                     <div class="anal">
-                        <input type="range" min="0" max="100" value="30" class="range6" step="10" list="volsettings"
-                            style="width: 175px; align: center;">
-                        <datalist id="volsettings">
+                        <label for="range18">
+                            <input type="range" min="0" max="100" value="30" name="range18" id="range18" class="range6"
+                                step="10" list="volsettings12" style="width: 175px; align: center;"></label>
+                        <datalist id="volsettings12">
                             <option>0</option>
                             <option>10</option>
                             <option>20</option>
@@ -781,9 +833,10 @@
 
             <fieldset>
                 <h2 class="fs-title">Personality</h2>
+                <!-- Question -->
                 <h3 class="fs-subtitle">Have you taken any of the personality tests listed below?</h3>
                 <label for="Ennegram">Ennegram:</label>
-                <select name="Ennegram">
+                <select id="Ennegram" name="Ennegram">
                     <option value="No" selected>Type</option>
                     <option value="Type 1">Type 1</option>
                     <option value="Type 2">Type 2</option>
@@ -809,9 +862,9 @@
                 </select>
                 <br>
                 <br>
-
+                <!-- Question -->
                 <label for="MBTI">Myers Briggs:</label>
-                <select name="MBTI">
+                <select id="MBTI" name="MBTI">
                     <option value="No" selected>Select</option>
                     <option value="ESFJ">ESFJ</option>
                     <option value="ISFJ">ISFJ</option>
@@ -832,25 +885,27 @@
                 </select>
                 <br>
                 <br>
+                <!-- Question -->
                 <label for="DISC">DISC:</label>
-                <select name="DISC">
+                <select id="DISC" name="DISC">
                     <option value="No" selected>Dominant</option>
                     <option value="D">D: Dominance</option>
                     <option value="I">I: Influencing</option>
-                    <option value="C">C: Cautious / Concientious</option>
                     <option value="S">S: Stabilizing </option>
+                    <option value="C">C: Cautious / Concientious</option>
                 </select>
-                <select name="DISC2">
+                <select id="DISC2" name="DISC2">
                     <option value="No" selected>Supporting</option>
                     <option value="D">D: Dominance</option>
                     <option value="I">I: Influencing</option>
-                    <option value="C">C: Cautious / Concientious</option>
                     <option value="S">S: Stabilizing </option>
+                    <option value="C">C: Cautious / Concientious</option>
                 </select>
                 <br>
                 <br>
+                <!-- Question -->
                 <label for="Ast">Horoscope:</label>
-                <select name="Ast">
+                <select id="Ast" name="Ast">
                     <option value="No" selected>Sign</option>
                     <option value="Aries">Aries</option>
                     <option value="Taurus">Taurus</option>
@@ -866,51 +921,60 @@
                     <option value="Pisces">Pisces</option>
                 </select>
                 <br><br>
+                <!-- Question -->
                 <div class="biggie">
-                    The Big Five (Check if Yes): <input type="checkbox" id="myCheck" class="big5"
-                        onclick="myFunction1()">
+                    <label for="Big5">The Big Five (Check if Yes):</label><input type="checkbox" id="myCheck Big5"
+                        class="big5" name="Big5" onclick="myFunction1()">
                 </div>
 
-
+                <!-- 1 -->
                 <div id="text" style="display:none">
                     <br>
                     <div class="rangeq">
                         <span id="range7Value">20</span>
-                        <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 225px;"
-                            onChange="range7Slide(this.value)" onmousemove="range7Slide(this.value)"></Input>
-                        <label for="right" class="temp-right" style="text-align: right;">Agreeable</label>
+                        <Input class="range" type="range" name="range19" id="range19" value="20" min="0" max="100"
+                            style="width: 225px;" onChange="range7Slide(this.value)"
+                            onmousemove="range7Slide(this.value)"></Input>
+                        <label for="range19" class="temp-right" style="text-align: right;">Agreeable</label>
 
                     </div>
                     <br>
+                    <!-- 2 -->
                     <div class="rangeq">
                         <span id="range8Value">20</span>
-                        <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 225px;"
-                            onChange="range8Slide(this.value)" onmousemove="range8Slide(this.value)"></Input>
-                        <label for="right" class="temp-right" style="text-align: right;">Neuroticism</label>
+                        <Input class="range" type="range" name="range20" id="range20" value="20" min="0" max="100"
+                            style="width: 225px;" onChange="range8Slide(this.value)"
+                            onmousemove="range8Slide(this.value)"></Input>
+                        <label for="range20" class="temp-right" style="text-align: right;">Neuroticism</label>
                     </div>
                     <br>
+                    <!-- 3 -->
                     <div class="rangeq">
                         <span id="range9Value">20</span>
-                        <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 225px;"
-                            onChange="range9Slide(this.value)" onmousemove="range9Slide(this.value)"></Input>
-                        <label for="right" class="temp-right" style="text-align: right;">Extroversion</label>
+                        <Input class="range" id="range21" type="range" name="range21" value="20" min="0" max="100"
+                            style="width: 225px;" onChange="range9Slide(this.value)"
+                            onmousemove="range9Slide(this.value)"></Input>
+                        <label for="range21" class="temp-right" style="text-align: right;">Extroversion</label>
                     </div>
                     <br>
+                    <!-- 4 -->
                     <div class="rangeq">
                         <!-- <label for="left" class="temp-left">0</label> -->
                         <span id="range10Value">20</span>
-                        <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 225px;"
-                            onChange="range10Slide(this.value)" onmousemove="range10Slide(this.value)"></Input>
-                        <label for="right" class="temp-right" style="text-align: right;">Concientious</label>
+                        <Input class="range" type="range" id="range22" name="range22" value="20" min="0" max="100"
+                            style="width: 225px;" onChange="range10Slide(this.value)"
+                            onmousemove="range10Slide(this.value)"></Input>
+                        <label for="range22" class="temp-right" style="text-align: right;">Concientious</label>
                     </div>
                     <br>
-
+                    <!-- 5 -->
                     <div class="rangeq">
                         <!-- <label for="left" class="temp-left">0</label> -->
                         <span id="range11Value">20</span>
-                        <Input class="range" type="range" name="" value="20" min="0" max="100" style="width: 225px;"
-                            onChange="range11Slide(this.value)" onmousemove="range11Slide(this.value)"></Input>
-                        <label for="right" class="temp-right" style="text-align: right;">Openness</label>
+                        <Input class="range" id="range23" type="range" name="range23" value="20" min="0" max="100"
+                            style="width: 225px;" onChange="range11Slide(this.value)"
+                            onmousemove="range11Slide(this.value)"></Input>
+                        <label for="range23" class="temp-right" style="text-align: right;">Openness</label>
                     </div>
                 </div>
                 <br>
@@ -923,51 +987,27 @@
             </fieldset>
             <fieldset>
                 <h2 class="fs-title">To The Future</h2>
-                <h3 class="fs-subtitle">What do you imagine the future will be like 10 years from now?</h3>
-                <textarea class="form-control" name="CAT_Custom_10" id="CAT_Custom_10" rows="4"
+                <!-- Question -->
+                <label for="CAT_Custom_25">
+                    <h3 class="fs-subtitle">What do you imagine the future will be like 10 years from now?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_25" id="CAT_Custom_25" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <br>
-                <h3 class="fs-subtitle">Is there anything in particular you hope humanity can accomplish in the next 10
-                    years?</h3>
-                <textarea class="form-control" name="CAT_Custom_10" id="CAT_Custom_10" rows="4"
+                <!-- Question -->
+                <label for="CAT_Custom_26">
+                    <h3 class="fs-subtitle">Is there anything in particular you hope humanity can accomplish in the next
+                        10
+                        years?</h3>
+                </label>
+                <textarea class="form-control" name="CAT_Custom_26" id="CAT_Custom_26" rows="4"
                     onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
                 <input type="submit" name="subm" class="subm action-button" value="Submit" />
             </fieldset>
-            <!-- <fieldset>
-            <h2 class="fs-title">Question 8</h2>
-            <h3 class="fs-subtitle">Are there any specific areas of compliance training that you need to complete?</h3>
-            <textarea class="form-control" name="CAT_Custom_8" id="CAT_Custom_8" rows="4"
-                onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-            <h2 class="fs-title">Question 8</h2>
-            <h3 class="fs-subtitle">Are there any specific areas of compliance training that you need to complete?</h3>
-            <textarea class="form-control" name="CAT_Custom_8" id="CAT_Custom_8" rows="4"
-                onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-            
-
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset> -->
         </form>
     </main>
 
-    <!-- <script type="text/javascript" charset="utf-8">
-        var myRange = document.querySelector('#myRange');
-        var myValue = document.querySelector('#myValue');
-        var myUnits = '';
-        var off = myRange.offsetWidth / (parseInt(myRange.max) - parseInt(myRange.min));
-        var px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetParent.offsetWidth / 2);
-
-        myValue.parentElement.style.left = px + 'px';
-        myValue.parentElement.style.top = myRange.offsetHeight + 'px';
-        myValue.innerHTML = myRange.value + ' ' + myUnits;
-
-        myRange.oninput = function () {
-            let px = ((myRange.valueAsNumber - parseInt(myRange.min)) * off) - (myValue.offsetWidth / 2);
-            myValue.innerHTML = myRange.value + ' ' + myUnits;
-            myValue.parentElement.style.left = px + 'px';
-        };
-    </script> -->
     <script type="text/javascript">
         function rangeSlide(value) {
             document.getElementById('rangeValue').innerHTML = value;
