@@ -73,7 +73,7 @@ $(".previous").click(function () {
     });
 });
 
-$(".submit").click(function () {
+$(".subm").click(function () {
     return false;
 })
 
