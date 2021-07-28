@@ -351,7 +351,7 @@ img {
 	display: flex;
 	flex-direction: row;
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 90%;
  
 }
 
@@ -360,11 +360,11 @@ img {
 }
 
 .range6 {
-    max-width: 100px;
+    max-width: 95px;
 }
 
 .rangeq label {
-    font-size: 9px;
+    font-size: 8px;
     justify-content: center;
     vertical-align: center;
 }
