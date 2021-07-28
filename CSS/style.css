@@ -331,8 +331,10 @@ img {
     #home-c .process,
   .items {
     grid-template-columns: 1fr; }
+}
+  
+  @media(max-width: 375px) {
 
- 
 /* Questionaire */
     #msform {
 		top: 145px;
@@ -351,7 +353,7 @@ img {
 	display: flex;
 	flex-direction: row;
     justify-content: space-between;
-    max-width: 90%;
+    max-width: 350px;
  
 }
 
@@ -360,7 +362,7 @@ img {
 }
 
 .range6 {
-    max-width: 95px;
+    max-width: 100px;
 }
 
 .rangeq label {
