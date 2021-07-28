@@ -331,6 +331,24 @@ img {
     #home-c .process,
   .items {
     grid-template-columns: 1fr; }
+
+
+.biggie {
+    margin-left: 70px  ;
+}
+
+#msform {
+    top: 145px;
+    width:  100%;
+    margin: 5px auto;
+    text-align: center;
+    position: relative;
+}
+
+#progessbar {
+    margin-top: 100px;
+    width: 80%;
+}
 }
   
   @media(max-width: 375px) {
@@ -373,3 +391,8 @@ img {
 select { margin-bottom: 5px; 
 	
 	  }
+
+.biggie {
+        margin-left: 0px  ;
+    }
+  
