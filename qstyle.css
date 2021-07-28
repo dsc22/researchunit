@@ -337,7 +337,6 @@ margin-right: 25px; */
 	  margin-left: 70px  ;
   }
 
-  .transparent-text {
-	  color: transparent;
-	  background: transparent;
-  }
+   .range p {
+	color: white;
+}
