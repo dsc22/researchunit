@@ -332,8 +332,10 @@ img {
   .items {
     grid-template-columns: 1fr; }
 
+ 
+/* Questionaire */
     #msform {
-		top: 30px;
+		top: 145px;
 		width:  100%;
 		margin: 5px auto;
 		text-align: center;
@@ -348,6 +350,21 @@ img {
 	.rangeq {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	max-width: 95%;
+    justify-content: space-between;
+    max-width: 100%;
+ 
+}
+
+.anal {
+    max-width: 80%;
+}
+
+.range6 {
+    max-width: 100px;
+}
+
+.rangeq label {
+    font-size: 9px;
+    justify-content: center;
+    vertical-align: center;
 }
