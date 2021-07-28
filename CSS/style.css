@@ -333,13 +333,14 @@ img {
     grid-template-columns: 1fr; }
 
     #msform {
-		top: 40px;
-		width:  90%;
-		margin: 25px auto;
+		top: 50px;
+		width:  100%;
+		margin: 15px auto;
 		text-align: center;
 		position: relative;
 	}
 
 	#progessbar {
+		margin-top: 40px;
 		width: 80%;
 	}
