@@ -7,7 +7,7 @@
 * {margin: 0; padding: 0;}
 
 html {
-	height: 225vh;
+	height: 200vh;
 	background: #fff;
 }
 
@@ -52,14 +52,18 @@ body {
 	font-size: 13px;
 }
 
-#msform input, #text-box {
+#msform input[type=checkbox] {
 	width: 29%;
-	height: '';
-	padding: 5px;
-	margin-top: 2px;
+	height: 24px;
+	padding: 2px;
 	justify-content: center;
 	vertical-align: center;
 	
+}
+
+input[type=number] {
+	max-width: 30%;
+	max-height: '';
 }
 
 .big5 {
@@ -72,14 +76,14 @@ body {
 	margin: 0;
 }
 
-/* .HHI #text-box {
+.HHI #text-box {
 	width: 29%;
 	height: 40px;
 	padding: 5px;
 	margin-top: 27px;
 	justify-content: center;
 	vertical-align: center;
-} */
+}
 
 
 /*buttons*/
@@ -277,6 +281,7 @@ margin-right: 25px; */
 
   select {
 	  margin-left: 15px;
+	  margin-bottom: 2px;
 	  outline: none;
 	  max-width: 120px;
 	background:
@@ -336,11 +341,3 @@ margin-right: 25px; */
   .biggie {
 	  margin-left: 70px  ;
   }
-
-  .transparent-text {
-	  color: white;
-  }
-
-  .rangeq .transparent-text {
-	color: white;
-}
