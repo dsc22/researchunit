@@ -7,7 +7,7 @@
 * {margin: 0; padding: 0;}
 
 html {
-	height: 200vh;
+	height: 225vh;
 	background: #fff;
 }
 
@@ -54,8 +54,9 @@ body {
 
 #msform input, #text-box {
 	width: 29%;
-	height: 24px;
-	padding: 2px;
+	height: '';
+	padding: 5px;
+	margin-top: 2px;
 	justify-content: center;
 	vertical-align: center;
 	
@@ -71,14 +72,14 @@ body {
 	margin: 0;
 }
 
-.HHI #text-box {
+/* .HHI #text-box {
 	width: 29%;
 	height: 40px;
 	padding: 5px;
 	margin-top: 27px;
 	justify-content: center;
 	vertical-align: center;
-}
+} */
 
 
 /*buttons*/
@@ -276,7 +277,6 @@ margin-right: 25px; */
 
   select {
 	  margin-left: 15px;
-	  margin-bottom: 2px;
 	  outline: none;
 	  max-width: 120px;
 	background:
@@ -335,4 +335,8 @@ margin-right: 25px; */
 
   .biggie {
 	  margin-left: 70px  ;
+  }
+
+  .transparent-text {
+	  color: white;
   }

@@ -278,6 +278,14 @@ img {
 
 /* Mobile */
 @media(max-width: 768px) {
+    #msform {
+		top: 40px;
+		width:  80%;
+		margin: 50px auto;
+		text-align: center;
+		position: relative;
+	}
+    
     .navbar {
         flex-direction: column;
         justify-content: center;
@@ -323,7 +331,7 @@ img {
     #home-c .process,
   .items {
     grid-template-columns: 1fr; }
-  }
+}
   
   @media(max-width: 375px) {
 
@@ -350,11 +358,11 @@ img {
 }
 
 .anal {
-    max-width: 80%;
+    max-width: 85%;
 }
 
 .range6 {
-    max-width: 120px;
+    max-width: 95px;
 }
 
 .rangeq label {
@@ -362,3 +370,6 @@ img {
     justify-content: center;
     vertical-align: center;
 }
+select { margin-bottom: 5px; 
+	
+	  }
