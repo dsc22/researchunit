@@ -278,6 +278,14 @@ img {
 
 /* Mobile */
 @media(max-width: 768px) {
+    #msform {
+		top: 40px;
+		width:  80%;
+		margin: 50px auto;
+		text-align: center;
+		position: relative;
+	}
+    
     .navbar {
         flex-direction: column;
         justify-content: center;
