@@ -166,11 +166,28 @@ function change_month(select) {
     $(day).val(val);
 }
 
-function myFunction1() {
+
+
+function myFunction2() {
     // Get the checkbox
     var checkBox = document.getElementById("myCheck");
     // Get the output text
     var text = document.getElementById("text");
+
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true) {
+        text.style.display = "block";
+    } else {
+        text.style.display = "none";
+    }
+}
+
+
+function myFunction1() {
+    // Get the checkbox
+    var checkBox = document.getElementById("myCheck2");
+    // Get the output text
+    var text = document.getElementById("text2");
 
     // If the checkbox is checked, display the output text
     if (checkBox.checked == true) {
