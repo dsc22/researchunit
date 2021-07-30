@@ -332,10 +332,16 @@ img {
   .items {
     grid-template-columns: 1fr; }
 
+    .rangeq {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 95%;
+     
 
-.biggie {
+/* .biggie {
     margin-left: 70px  ;
-}
+} */
 
 #msform {
     top: 145px;
@@ -349,6 +355,8 @@ img {
     margin-top: 100px;
     width: 80%;
 }
+
+
 }
   
   @media(max-width: 375px) {
@@ -356,12 +364,21 @@ img {
 /* Questionaire */
     #msform {
 		top: 145px;
-		width:  100%;
+		width:  92%;
 		margin: 5px auto;
 		text-align: center;
 		position: relative;
-	}
+    }
+    #range19, #range20, #range21, #range22, #range23, #range24 {
+        max-width: 150px;
+    }
 
+    .action-button {
+        max-width: 90px;
+        padding: 10px 5px;
+	height: 30px;
+	margin: 10px 5px;
+    }
 	#progessbar {
 		margin-top: 100px;
 		width: 80%;
@@ -392,7 +409,7 @@ select { margin-bottom: 5px;
 	
 	  }
 
-.biggie {
+/* .biggie {
         margin-left: 0px  ;
-    }
+    } */
   
